@@ -149,9 +149,8 @@ body::before {
   align-items: center;
 }
 
-/* ── RIGHT: PHOTO (column 2) ── */
+/* ── RIGHT: PHOTO (column 2 via DOM order) ── */
 .hero-photo-wrap {
-  grid-column: 2;
   display: flex; flex-direction: column; align-items: center; gap: 1.5rem;
   position: relative;
 }
@@ -250,8 +249,8 @@ body::before {
 }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
 
-/* ── LEFT: TEXT (column 1) ── */
-.hero-text { grid-column: 1; display: flex; flex-direction: column; gap: 0; }
+/* ── LEFT: TEXT (column 1 via DOM order) ── */
+.hero-text { display: flex; flex-direction: column; gap: 0; }
 
 .hero-greeting {
   font-family: 'JetBrains Mono', monospace;
@@ -384,8 +383,8 @@ body::before {
     grid-template-columns: 1fr;
     gap: 2.5rem; text-align: center;
   }
-  .hero-photo-wrap { grid-column: 1; order: 1; align-items: center; }
-  .hero-text       { grid-column: 1; order: 2; }
+  .hero-photo-wrap { order: 1; align-items: center; }
+  .hero-text       { order: 2; }
   .hero-photo-frame { width: 220px; height: 265px; }
   .hero-chip { display: none; }
   .hero-divider { margin: 0 auto 1.5rem; }
