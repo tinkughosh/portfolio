@@ -144,14 +144,14 @@ body::before {
 /* SPLIT LAYOUT: image left, text right */
 .hero-split {
   display: grid;
-  grid-template-columns: 360px 1fr;
+  grid-template-columns: 1fr 360px;
   gap: 4rem;
   align-items: center;
 }
 
-/* ── LEFT: PHOTO (column 1) ── */
+/* ── RIGHT: PHOTO (column 2) ── */
 .hero-photo-wrap {
-  grid-column: 1;
+  grid-column: 2;
   display: flex; flex-direction: column; align-items: center; gap: 1.5rem;
   position: relative;
 }
@@ -250,8 +250,8 @@ body::before {
 }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
 
-/* ── RIGHT: TEXT (column 2) ── */
-.hero-text { grid-column: 2; display: flex; flex-direction: column; gap: 0; }
+/* ── LEFT: TEXT (column 1) ── */
+.hero-text { grid-column: 1; display: flex; flex-direction: column; gap: 0; }
 
 .hero-greeting {
   font-family: 'JetBrains Mono', monospace;
