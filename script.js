@@ -16,11 +16,9 @@ mobileMenu.querySelectorAll('a').forEach(a => {
 
 /* ===== TYPED TITLE ===== */
 const titles = [
+  'Network Engineer',
   'Network Security Engineer',
-  'Network Automation Specialist',
-  'Tech Lead @ Cognizant',
-  'Firewall & SD-WAN Expert',
-  'Python | Ansible | APIs',
+  'Network & Security Automator',
 ];
 let tIdx = 0, cIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedTitle');

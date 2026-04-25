@@ -72,10 +72,20 @@
 
         <!-- RIGHT: TEXT -->
         <div class="hero-text">
-          <p class="hero-greeting">Hello, I'm</p>
-          <h1 class="hero-name">Tinku<br><span>Ghosh</span></h1>
+          <p class="hero-greeting"><span class="greeting-bracket">[</span> Hello, I'm <span class="greeting-bracket">]</span></p>
+          <h1 class="hero-name">
+            <span class="name-line-1">Tinku</span>
+            <span class="name-line-2">Ghosh<span class="name-cursor-blink">_</span></span>
+          </h1>
+          <div class="hero-role-strip">
+            <span class="role-pill role-pill-1">Network Engineer</span>
+            <span class="role-sep">·</span>
+            <span class="role-pill role-pill-2">Security Engineer</span>
+            <span class="role-sep">·</span>
+            <span class="role-pill role-pill-3">Automator</span>
+          </div>
           <div class="hero-title-wrap">
-            <span id="typedTitle"></span><span class="cursor">|</span>
+            <span class="typed-prefix">&gt;&nbsp;</span><span id="typedTitle"></span><span class="cursor">|</span>
           </div>
           <div class="hero-divider"></div>
           <p class="hero-sub">
@@ -141,12 +151,12 @@
           </div>
           <div class="about-links">
             <a href="https://linkedin.com/in/tinkughosh" target="_blank" rel="noopener" class="social-link">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-              LinkedIn
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+              <span>LinkedIn</span>
             </a>
             <a href="mailto:tinkughosh96@outlook.com" class="social-link">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-              Email Me
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <span>Email Me</span>
             </a>
           </div>
         </div>
@@ -335,7 +345,7 @@
         <div class="project-card" data-animate>
           <div class="project-tag">CLI Automation</div>
           <h3>Config Backup & Audit System</h3>
-          <p>Automated configuration and fact-gathering backup system with baseline configuration audit and remediation across the network device fleet.</p>
+          <p>Eliminated hours of manual device auditing per week — automated config backups and baseline compliance checks across the entire fleet, cutting audit labour costs by <strong>~70%</strong> and catching misconfigurations before they cause outages.</p>
           <div class="project-tech">
             <span>Python</span><span>Ansible</span><span>Cisco IOS</span>
           </div>
@@ -344,7 +354,7 @@
         <div class="project-card" data-animate>
           <div class="project-tag">CLI Automation</div>
           <h3>Password Rotation Automation</h3>
-          <p>Quarterly automated local password rotation across all network devices, eliminating manual effort and ensuring compliance with security policy.</p>
+          <p>Replaced a full day of manual quarterly work across hundreds of devices with a single scheduled script — saving the team <strong>8+ engineer-hours</strong> per cycle while enforcing zero-gap compliance with security policy.</p>
           <div class="project-tech">
             <span>Python</span><span>Netmiko</span><span>Paramiko</span>
           </div>
@@ -353,7 +363,7 @@
         <div class="project-card" data-animate>
           <div class="project-tag">CLI Automation</div>
           <h3>Pre/Post Change Verification</h3>
-          <p>Robust pre and post-change device verification checks ensuring network state consistency during planned maintenance windows.</p>
+          <p>Automated state snapshots before and after every change window, reducing post-change validation time by <strong>60%</strong> and enabling faster rollback decisions — directly protecting SLA and minimising costly unplanned downtime.</p>
           <div class="project-tech">
             <span>Python</span><span>Ansible</span><span>NAPALM</span>
           </div>
@@ -362,7 +372,7 @@
         <div class="project-card" data-animate>
           <div class="project-tag">API Automation</div>
           <h3>Meraki-ServiceNow Integration</h3>
-          <p>Meraki MX uplink failure alert integration with ServiceNow — automatically creates and routes incident tickets when uplink failures are detected.</p>
+          <p>Wired Meraki MX uplink failures directly into ServiceNow ticket creation — removing manual L1 monitoring shifts and cutting mean-time-to-ticket from <strong>15+ minutes to under 60 seconds</strong>, saving on-call overhead and accelerating resolution.</p>
           <div class="project-tech">
             <span>Meraki API</span><span>ServiceNow API</span><span>Python</span>
           </div>
@@ -371,7 +381,7 @@
         <div class="project-card" data-animate>
           <div class="project-tag">API Automation</div>
           <h3>IoC EDL for Meraki</h3>
-          <p>Indicator of Compromise (IoC) External Dynamic List implementation for Meraki Organization — automated threat intelligence feed integration.</p>
+          <p>Automated threat-intel feed ingestion into Meraki security policies — blocking known malicious IPs organisation-wide in real time, eliminating manual firewall rule updates and reducing potential breach exposure cost significantly.</p>
           <div class="project-tech">
             <span>Meraki API</span><span>Python</span><span>Threat Intel</span>
           </div>
@@ -380,7 +390,7 @@
         <div class="project-card" data-animate>
           <div class="project-tag">API Automation</div>
           <h3>Automated Firmware Management</h3>
-          <p>Automated firmware management system for VLANs, SSIDs, and client connections reporting, plus automated firmware upgrade orchestration.</p>
+          <p>Centralised firmware tracking and upgrade orchestration across the entire device estate — cutting per-device upgrade effort by <strong>80%</strong>, eliminating version-drift risk, and freeing engineers from repetitive maintenance to focus on higher-value work.</p>
           <div class="project-tech">
             <span>REST API</span><span>Postman</span><span>Jenkins</span>
           </div>

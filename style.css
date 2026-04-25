@@ -252,31 +252,74 @@ body::before {
 
 .hero-greeting {
   font-family: 'JetBrains Mono', monospace;
-  font-size: 0.85rem; color: var(--accent);
-  letter-spacing: 0.2em; text-transform: uppercase;
-  margin-bottom: 0.75rem;
+  font-size: 0.82rem; color: var(--text-dim);
+  letter-spacing: 0.18em; text-transform: uppercase;
+  margin-bottom: 0.85rem;
 }
+.greeting-bracket { color: var(--accent); font-size: 1em; }
 
+/* ── CREATIVE NAME ── */
 .hero-name {
-  font-size: clamp(2.8rem, 5.5vw, 4.5rem);
-  font-weight: 800; line-height: 1.05;
-  letter-spacing: -0.02em;
-  color: var(--text);
+  font-size: clamp(3rem, 6vw, 5rem);
+  font-weight: 900; line-height: 1.0;
+  letter-spacing: -0.03em;
   margin-bottom: 1rem;
 }
-.hero-name span {
-  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 100%);
+.name-line-1 {
+  display: block; color: var(--text);
+  text-shadow: 0 0 60px rgba(168,85,247,0.15);
+}
+.name-line-2 {
+  display: block;
+  background: linear-gradient(135deg, var(--accent) 0%, var(--accent-2) 55%, #f97316 100%);
   -webkit-background-clip: text; -webkit-text-fill-color: transparent;
   background-clip: text;
+  position: relative;
+}
+.name-cursor-blink {
+  -webkit-text-fill-color: var(--accent);
+  animation: blink 1.2s step-end infinite;
+  font-weight: 300;
 }
 
+/* ── ROLE STRIP ── */
+.hero-role-strip {
+  display: flex; align-items: center; gap: 0.6rem;
+  flex-wrap: wrap; margin-bottom: 1rem;
+}
+.role-sep { color: var(--text-dim); font-size: 0.7rem; }
+.role-pill {
+  font-size: 0.72rem; font-weight: 700;
+  padding: 0.28rem 0.75rem; border-radius: 999px;
+  letter-spacing: 0.04em;
+}
+.role-pill-1 {
+  background: rgba(168,85,247,0.12); color: var(--accent);
+  border: 1px solid rgba(168,85,247,0.3);
+}
+.role-pill-2 {
+  background: rgba(236,72,153,0.1); color: var(--accent-2);
+  border: 1px solid rgba(236,72,153,0.25);
+}
+.role-pill-3 {
+  background: rgba(6,182,212,0.1); color: var(--accent-3);
+  border: 1px solid rgba(6,182,212,0.25);
+}
+
+/* ── TYPED TITLE ── */
 .hero-title-wrap {
   font-family: 'JetBrains Mono', monospace;
-  font-size: clamp(0.95rem, 2vw, 1.2rem);
+  font-size: clamp(0.88rem, 1.8vw, 1.05rem);
   color: var(--text-muted); margin-bottom: 1.5rem;
   min-height: 1.8rem;
   display: flex; align-items: center; gap: 0;
+  background: rgba(168,85,247,0.04);
+  border: 1px solid var(--border-2);
+  border-radius: var(--radius-sm);
+  padding: 0.5rem 0.85rem;
+  width: fit-content;
 }
+.typed-prefix { color: var(--accent); margin-right: 2px; }
 .cursor { color: var(--accent); animation: blink 1s infinite; }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
@@ -433,15 +476,16 @@ body::before {
   color: var(--accent);
 }
 
-.about-links { display: flex; gap: 0.75rem; flex-wrap: wrap; }
+.about-links { display: flex; gap: 0.75rem; flex-wrap: wrap; align-items: center; }
 .social-link {
-  display: flex; align-items: center; gap: 0.5rem;
-  padding: 0.5rem 1rem; border-radius: var(--radius-sm);
-  font-size: 0.82rem; font-weight: 500;
+  display: inline-flex; align-items: center; gap: 0.5rem;
+  padding: 0.55rem 1.1rem; border-radius: var(--radius-sm);
+  font-size: 0.82rem; font-weight: 500; line-height: 1;
   border: 1px solid var(--border); color: var(--text-muted);
-  transition: all 0.2s;
+  transition: all 0.2s; white-space: nowrap;
 }
-.social-link svg { width: 15px; height: 15px; }
+.social-link svg { display: block; flex-shrink: 0; width: 16px; height: 16px; }
+.social-link span { display: block; line-height: 1; }
 .social-link:hover { border-color: var(--accent); color: var(--accent); background: var(--glow); }
 
 .about-stats {
@@ -626,6 +670,7 @@ body::before {
 
 .project-card h3 { font-size: 1rem; font-weight: 700; color: var(--text); }
 .project-card p { font-size: 0.875rem; color: var(--text-muted); flex: 1; }
+.project-card p strong { color: var(--accent); font-weight: 700; -webkit-text-fill-color: unset; }
 
 .project-tech { display: flex; flex-wrap: wrap; gap: 0.4rem; }
 .project-tech span {
