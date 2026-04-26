@@ -78,7 +78,7 @@ typeLoop();
         const d = Math.sqrt(dx * dx + dy * dy);
         if (d < maxDist) {
           ctx.beginPath();
-          ctx.strokeStyle = `rgba(168,85,247,${0.14 * (1 - d / maxDist)})`;
+          ctx.strokeStyle = `rgba(94,106,210,${0.12 * (1 - d / maxDist)})`;
           ctx.lineWidth = 0.6;
           ctx.moveTo(nodes[i].x, nodes[i].y);
           ctx.lineTo(nodes[j].x, nodes[j].y);
@@ -87,7 +87,7 @@ typeLoop();
       }
       ctx.beginPath();
       ctx.arc(nodes[i].x, nodes[i].y, nodes[i].r, 0, Math.PI * 2);
-      ctx.fillStyle = 'rgba(168,85,247,0.5)';
+      ctx.fillStyle = 'rgba(94,106,210,0.45)';
       ctx.fill();
     }
     animId = requestAnimationFrame(draw);
