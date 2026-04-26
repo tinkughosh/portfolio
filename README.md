@@ -14,7 +14,7 @@
 
 ## 🖥️ Preview
 
-> A fully responsive personal portfolio built with vanilla HTML, CSS & JavaScript — inspired by [Linear's](https://linear.app) design system.
+> A fully responsive personal portfolio built with vanilla HTML, CSS & JavaScript.
 
 | Desktop | Mobile |
 |---------|--------|
@@ -24,7 +24,7 @@
 
 ## ✨ Features
 
-- **Linear-inspired design** — near-black `#0F0F0F` background, `#5E6AD2` accent, 6px precision radius
+- **Dark purple theme** — deep `#050508` background, `#a855f7` → `#ec4899` gradient accent
 - **Animated network canvas** — live node graph in the hero background
 - **Typewriter title** — cycles through *Network Engineer → Network Security Engineer → Network & Security Automator*
 - **Floating stat chips** — Vibe Coder · Speed Cuber · Technoholic
@@ -39,7 +39,7 @@
 ```
 portfolio/
 ├── index.html      # All sections: Hero, About, Skills, Experience, Projects, Education, Contact
-├── style.css       # Linear design system tokens + full responsive layout
+├── style.css       # Design tokens + full responsive layout
 ├── script.js       # Network canvas · typed title · scroll observer · nav
 └── README.md       # You are here
 ```
@@ -61,16 +61,12 @@ Two tagged versions exist — switch between them instantly:
 
 | Tag | Theme | Description |
 |-----|-------|-------------|
-| `v1-purple-theme` | Purple / Pink gradient | Original vibrant design |
-| `v2-linear-theme` | Linear blue-purple | Current minimal design |
+| `v1-purple-theme` | Purple / Pink gradient | Current design |
 
 ```bash
-# Preview old theme files
-git show v1-purple-theme:style.css
-
-# Roll back to purple theme
+# Restore theme from tag if ever needed
 git checkout v1-purple-theme -- style.css script.js
-git commit -m "Rollback to v1 purple theme"
+git commit -m "Restore purple theme"
 git push
 ```
 
