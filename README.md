@@ -55,22 +55,6 @@ portfolio/
 
 ---
 
-## 🔖 Version History & Rollback
-
-Two tagged versions exist — switch between them instantly:
-
-| Tag | Theme | Description |
-|-----|-------|-------------|
-| `v1-purple-theme` | Purple / Pink gradient | Current design |
-
-```bash
-# Restore theme from tag if ever needed
-git checkout v1-purple-theme -- style.css script.js
-git commit -m "Restore purple theme"
-git push
-```
-
----
 
 ## 🚀 Run Locally
 
