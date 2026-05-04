@@ -233,6 +233,10 @@ body::before {
   50%{ transform: translateY(-5px); }
 }
 
+.hero-photo-actions {
+  display: flex; align-items: center; justify-content: center;
+  gap: 0.6rem; flex-wrap: wrap; margin-top: 1.25rem;
+}
 .hero-photo-badge {
   display: flex; align-items: center; gap: 0.5rem;
   padding: 0.5rem 1.25rem; border-radius: 999px;
@@ -247,6 +251,21 @@ body::before {
   box-shadow: 0 0 6px #22c55e;
   animation: pulse 2s infinite;
 }
+.hero-resume-btn {
+  display: inline-flex; align-items: center; gap: 0.45rem;
+  padding: 0.5rem 1.1rem; border-radius: 999px;
+  font-size: 0.78rem; font-weight: 600; letter-spacing: 0.02em;
+  background: linear-gradient(135deg, var(--accent), var(--accent-2));
+  color: #fff;
+  box-shadow: 0 4px 18px rgba(168, 85, 247, 0.35);
+  transition: transform 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+.hero-resume-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 28px rgba(168, 85, 247, 0.55);
+}
+.hero-resume-btn svg { width: 14px; height: 14px; flex-shrink: 0; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.5} }
 
 /* ── LEFT: TEXT (column 1 via DOM order) ── */
@@ -417,7 +436,7 @@ body::before {
   .hero-photo-frame::after { display: block; } /* keep corner accents */
 
   .hero-chip { display: none; }
-  .hero-photo-badge { margin-top: 1rem; }
+  .hero-photo-actions { margin-top: 1rem; }
 
   .hero-divider { margin: 0 auto 1.25rem; }
   .hero-title-wrap { margin: 0 auto 1.25rem; }
