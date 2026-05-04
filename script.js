@@ -18,7 +18,8 @@ mobileMenu.querySelectorAll('a').forEach(a => {
 const titles = [
   'Network Engineer',
   'Network Security Engineer',
-  'Network & Security Automator',
+  'AI-Driven Network Automator',
+  'CCNP ENCOR Certified',
 ];
 let tIdx = 0, cIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedTitle');
@@ -113,7 +114,7 @@ const observer = new IntersectionObserver((entries) => {
   });
 }, { threshold: 0.1 });
 
-document.querySelectorAll('[data-animate], .timeline-item, .project-card, .edu-card').forEach(el => {
+document.querySelectorAll('[data-animate], .timeline-item, .project-card, .edu-card, .cert-card').forEach(el => {
   observer.observe(el);
 });
 

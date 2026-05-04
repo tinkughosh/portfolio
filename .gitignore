@@ -3,3 +3,6 @@ Thumbs.db
 *.log
 .claude/
 CONTEXT.md
+*.docx
+*.code-workspace
+qr.png
