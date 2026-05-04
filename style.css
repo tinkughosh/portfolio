@@ -384,6 +384,7 @@ body::before {
   background: var(--glow);
   transform: translateY(-2px);
 }
+.btn .btn-icon { width: 16px; height: 16px; flex-shrink: 0; }
 
 @media (max-width: 960px) {
   #hero { padding-top: 0; }
