@@ -6,3 +6,8 @@ CONTEXT.md
 *.docx
 *.code-workspace
 qr.png
+credentials.json
+**/.github/credentials.json
+GitHub-Token.txt
+*token*.txt
+*secret*.txt
